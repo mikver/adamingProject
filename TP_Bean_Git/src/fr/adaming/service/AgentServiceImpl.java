@@ -1,4 +1,4 @@
-package dr.adaming.service;
+package fr.adaming.service;
 
 import java.util.List;
 
@@ -16,7 +16,7 @@ public class AgentServiceImpl implements IAgentService {
 	IAgentDao agent=new AgentDaoImpl();
 	@Override
 	public List<Agent> isExist(String login, String password) {
-		
+		System.out.println("1 méthode isExist"); 
 		return agent.isExist(login, password);
 	}
 
